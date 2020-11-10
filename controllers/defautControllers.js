@@ -14,11 +14,11 @@ module.exports = {
           if(path.extname(list) === '.jpg' || '.png' || '.jpeg') {
             files.push(`public/uploads/${list}`); //store the file name into the array files
             // console.log("Kai:::::::::::::::::", files)
-          }  
+          } 
       })  
         res.send(files)
-    }); 
-  }, 
+    });
+  },
 
   fileUplaod: async (req, res) => {
     res.send(req.file);
